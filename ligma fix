@@ -2176,7 +2176,7 @@ do
     }, {
       __index = _base_1,
       __call = function(cls, ...)
-        local _self_0 = setmetatable({}, _base_1)
+      local _self_0 = setmetatable({}, cls.__base)
         cls.__init(_self_0, ...)
         return _self_0
       end
